@@ -27,8 +27,8 @@ else {
   <li><a href="index.html">Home</a></li>
   <li><a href="login_page.php">Login</a></li>	
   <li><a href="about.html">About</a></li>
-  <li><a class="active" href="info.html">Info</a></li>
-  <li><a href="problems.php">Problems</a></li>	
+  <li><a href="info.html">Info</a></li>
+  <li><a class="active" href="problems.php">Problems</a></li>	
 </ul>
 </body>
 
