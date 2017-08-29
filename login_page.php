@@ -3,6 +3,7 @@
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="main_style.css">
+	<link rel="stylesheet" type="text/css" href="nav_bar_style.css">
 </head>
 <body>
 
