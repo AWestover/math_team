@@ -1,0 +1,109 @@
+/*Main style*/
+
+body {
+	background-color: #8d8e7a;
+}
+
+#main-wrapper {
+
+}
+
+.login-form {
+	background-color: grey;
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
+.login-form label {
+	padding: 3%;
+	margin: 10%;
+	margin-left: 0;
+}
+
+.login-form input {
+	padding: 3%;
+	margin: 2%;
+	margin-bottom: 10%;
+}
+
+.login-form button {
+	background-color: white;
+	padding: 4%;
+	margin-left: 10%;
+	margin-bottom: 6%;
+}
+
+.login-form button:hover {
+	background-color: grey;
+}
+
+.login-form a {
+	text-decoration: none;
+	background-color: #4286f4;
+	color: black;
+	padding: 4%;
+}
+
+.login-form a:hover {
+	background-color: #aa00f9;
+}
+
+.login-form p {
+	font-size: 150%;
+}
+
+
+
+.signup-form {
+	background-color: grey;
+	float: left;
+	width: 30%;
+	padding: 2%;
+}
+
+.signup-form label {
+	padding: 3%;
+}
+
+.signup-form input {
+	padding: 3%;
+	margin: 2%;
+	margin-bottom: 3%;
+}
+
+.signup-form button {
+	background-color: white;
+	padding: 4%;
+	margin-left: 10%;
+	margin-bottom: 6%;
+	float: right;
+}
+
+.signup-form button:hover {
+	background-color: grey;
+}
+
+.signup-form a {
+	float: right;
+	text-decoration: none;
+	color: black;
+	background-color: #4286f4;
+	padding: 4%;
+}
+
+.signup-form a:hover {
+	background-color: #aa00f9;
+
+}
+
+.signup-form p {
+	font-size: 150%;
+}
+
+
+.input-field-pair {
+	margin: 5%;
+	margin-left:0;
+	float: left;
+}
