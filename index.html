@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="index_style.css">
-	<link rel="stylesheet" type="text/css" href="nav_bar_style.css">
-    <title>Home</title>	
-</head>
-<body>
+	<head>
+		<title>Math team</title>
+		<script src="node_modules/p5/lib/p5.min.js"></script>
+	</head>	
+	<body>
+		<h3>Note this is currently NOT the official BHS math team website nor should you trust any information contained on this repository. There are however some prcatice problems, courtesy of Walter that you could practice for meets with.</h3>
 
-<ul class="menu">
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="https://741030eb.ngrok.io/math_team/login_page.php">Login</a></li>	
-  <li><a href="about.html">About</a></li>
-  <li><a href="info.html">Info</a></li>
-  <li><a href="https://741030eb.ngrok.io/math_team/problems.php">Problems</a></li>	
-</ul>
+		<script>
+			
+			let pos = new p5.Vector(10, 10);
+			let vel = new p5.Vector(0, 0);
+			let acc = new p5.Vector(0, 1);
+			let r = 5;
+			let dt = 0.1;
 
-<div class="text">
-  <h1 class="title">Belmont High School Math Team</h1>
-	<p>Made by BHS students Walter Shen and Alek Westover.</p>
-	<a href="links.html">Links</a>
-</div>
+			function setup() {
+				createCanvas(0.8*windowWidth, 0.8*windowHeight);
+			}
 
-</body>
+			function draw() {
+				background(200,200,200);
+			
+				ellipse(pos.x, pos.y, 2*r, 2*r);
+			
+				pos = p5.Vector.add(pos, p5.Vector.mult(vel, dt));
+				vel = p5.Vector.add(vel, p5.Vector.mult(acc, dt));
+
+				fill(0,0,0);
+				text("pos: "+pos.y, 0.7*width, 10);
+				text("vel: "+vel.y, 0.7*width, 30);
+				text("acc: "+acc.y, 0.7*width, 50);
+
+				if (pos.y > height*1.2) {
+					pos.y = -height*0.01;
+					vel.y = 0;
+				}
+
+			}
+
+
+		</script>
+	</body>
 </html>
